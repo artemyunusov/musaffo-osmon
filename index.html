@@ -695,6 +695,20 @@
   <script src="./assets/js/slider.js"></script>
 
   <!-- custom -->
+	
+		<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+
+	<div id='vrview'></div>
+
+	<script>
+		window.addEventListener('load', onVrViewLoad);
+
+		function onVrViewLoad() {
+			// Selector '#vrview' finds element with id 'vrview'.
+			let vrView = new VRView.Player('#vrview', {
+				image: '/assets/images/1.jpg',
+				is_stereo: true
+			});
 
 
 </body>
